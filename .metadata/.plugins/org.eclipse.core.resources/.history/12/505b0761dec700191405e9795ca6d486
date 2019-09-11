@@ -1,0 +1,28 @@
+import java.util.*;
+class A
+{
+	public void method()
+	{
+		System.out.println("Parent");
+	}
+}
+class B extends ParentChildExample
+{
+public void method()
+{
+	System.out.println("Child");
+}
+}
+public class ParentChildExa {
+
+	public static void main(String[] args) {
+ParentChildExample a=new ParentChildExample();
+a.method1();
+B b=new B();
+b.method1();
+ParentChildExample obj=new B();
+obj.method1();
+
+	}
+
+}

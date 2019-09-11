@@ -1,0 +1,27 @@
+
+public class swap {
+	
+	
+	private static final char[] getname = null;
+	public swap(int i, String string) {
+		// TODO Auto-generated constructor stub
+	}
+	public static void main(String args[])
+	{
+		int id;
+		String name;
+		swap a= new swap(1,"Ahsan");
+		swap b= new swap(2,"Dimple");
+		replace(a,b);
+		System.out.println(a.getname);
+		System.out.println(b.getname);	
+	}
+	public void replace(a1,b1)
+	{
+		String temp;
+		temp= a1;
+		a1=a2;
+		a2=temp;
+		
+	}
+}

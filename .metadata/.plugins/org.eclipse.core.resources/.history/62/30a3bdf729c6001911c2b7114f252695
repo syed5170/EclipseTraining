@@ -1,0 +1,16 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+public class DateEx {
+	public static void main(String[] a)
+	{
+		LocalDate today=LocalDate.now();
+		System.out.println(today);
+		
+		LocalTime timeobj=LocalTime.now();
+		System.out.println(timeobj);
+		
+	//
+		LocalDateTime dttime=LocatDateTime.now();
+	}
+
+}

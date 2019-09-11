@@ -1,0 +1,29 @@
+package abc;
+
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterClass {
+
+	public static void main(String args[]) {
+		try {
+		FileWriter fileWriter = new FileWriter("temp.txt");
+		BufferedWriter br = new BufferedWriter(fileWriter);
+		
+		br.write("Hello,");
+		br.write("Have a Great Day!!");
+		br.newLine();
+		br.write("Welcome,");
+		br.write("to my World!!\n");
+		br.append("Appending");
+		
+		br.close();
+		}
+		catch(IOException e) {
+			System.out.println(e);
+		}
+		System.out.println("Done!");
+	}
+}

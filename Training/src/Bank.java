@@ -1,0 +1,155 @@
+import java.util.Scanner;
+
+class Bank {
+
+	private  String cname;
+	private String address;
+	public String getCname() {
+		return cname;
+	}
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String addr) {
+		this.address = addr;
+	}
+}
+
+class Account
+{ 
+	private int accnum;
+	private double bal;
+	public int getAccnum() {
+		return accnum;
+	}
+	public void setAccno(int accno) {
+		this.accnum = accno;
+	}
+	public double getBal() {
+		return bal;
+	}
+	public void setBal(double bal) {
+		this.bal = bal;
+	}	
+}
+class RBI 
+{
+	private double minInterestRate ;
+	private double minBalanceAllowed ;
+	private double maxWithdrawlLimit;
+	
+	RBI()
+	{
+		this.minInterestRate=.04;
+		this.minBalanceAllowed=1200;
+		this.maxWithdrawlLimit=50000;
+		
+	}
+	Customer c = new Customer();
+	Account account = new Account();
+	static double balance=0;
+	double interest;
+	public double GetInterestRate()
+	{
+		System.out.println(minInterestRate);
+		return 0;
+	}
+	public double getWithdrawlLimit() {
+		System.out.println(maxWithdrawlLimit);
+		
+		return 0;
+	}
+	
+}
+class SBI extends RBI
+{
+	private String accno;
+	private String name;
+	private long balance;
+
+	Scanner KB=new Scanner(System.in);
+	void newAccount()
+	{ 
+		System.out.print("Enter Account Number : ");
+		accno=KB.next();
+		System.out.print("Enter Name : ");
+		name=KB.next();
+		System.out.print("Enter Balance : ");
+		balance=KB.nextLong();
+	}
+	void showAccount()
+	{ 
+		System.out.println(accno+","+name+","+balance);
+	}
+	void deposit()
+	{
+		long amt;
+		System.out.println("Enter Amount You Want To Deposit : ");
+		amt=KB.nextLong();
+		balance=balance+amt;
+	}
+	void withdrawl()
+	{
+		long amt;
+		System.out.println("Enter Amount You Want To Withdraw : ");
+		amt=KB.nextLong();
+		if(balance>=amt)
+		{ 
+			balance=balance-amt;
+		}
+		else
+		{
+			System.out.println("Less Balance..Transaction Failed..");
+		}
+	}
+	
+}
+
+class ICICI extends RBI 
+{
+	private String accno;
+	private String name;
+	private long balance;
+
+	Scanner KB=new Scanner(System.in);
+	void newAccount()
+	{ 
+		System.out.print("Enter Account No: ");
+		accno=KB.next();
+		System.out.print("Enter Name: ");
+		name=KB.next();
+		System.out.print("Enter Balance: ");
+		balance=KB.nextLong();
+	}
+	void showAccount()
+	{ 
+		System.out.println(accno+","+name+","+balance);
+	}
+	void deposit()
+	{
+		long amt;
+		System.out.println("Enter Amount You Want To Deposit : ");
+		amt=KB.nextLong();
+		balance=balance+amt;
+	}
+	void withdrawl()
+	{
+		long amt;
+		System.out.println("Enter Amount You Want To withdraw : ");
+		amt=KB.nextLong();
+		if(balance>=amt)
+		{ 
+			balance=balance-amt;
+		}
+		else
+		{
+			System.out.println("Less Balance!!!Transaction Failed..");
+		}
+	}
+}
+
+
+

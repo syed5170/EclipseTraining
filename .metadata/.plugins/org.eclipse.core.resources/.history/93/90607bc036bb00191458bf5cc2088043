@@ -1,0 +1,25 @@
+package food;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Practice pr= new Practice();
+		
+	}
+
+	static {
+		System.out.println("It is static");
+	}
+	
+	Practice(){
+		
+		System.out.println("It is a constructor");
+	}
+	
+	
+	{
+		System.out.println("It is initialization block");
+	}
+}

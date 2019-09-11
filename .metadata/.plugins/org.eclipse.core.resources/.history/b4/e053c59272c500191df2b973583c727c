@@ -1,0 +1,35 @@
+package abc;
+
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class FileWriterClass {
+
+	public static void main(String args[]) {
+		InputStreamReader in = InputStreamReader(System.in);
+		String s;
+		try {
+			
+		FileWriter fileWriter = new FileWriter("temp.txt");
+		BufferedWriter br = new BufferedWriter(fileWriter);
+		br.write(s);
+		br.newLine();
+		br.write("Have a Great Day!!");
+		br.newLine();
+		br.write("Welcome,");
+		br.write("to my World!!");
+		br.newLine();
+		br.append("Appending");
+		br.close();
+		}
+		
+		catch(IOException e) {
+			System.out.println(e);
+		}
+		System.out.println("Done!");
+	}
+}

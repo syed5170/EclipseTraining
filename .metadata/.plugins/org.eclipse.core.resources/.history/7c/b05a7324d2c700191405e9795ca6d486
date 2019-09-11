@@ -1,0 +1,25 @@
+public class Customer{
+	
+	public static void main(String arg[])
+	{
+		SBI s=new SBI();
+		s.openAccount();
+		s.showAccount();
+		s.deposit();
+		s.withdrawal();
+		
+		ICICI i = new ICICI();
+		i.openAccount();
+		i.showAccount();
+		i.deposit();
+		i.withdrawal();
+		
+		RBI r = new RBI();
+		r.GetInterestRate();
+		r.GetWithdrawalLimit();
+		
+		Bank1 c = new Bank1();
+		c.getCname();
+		c.getAddr();
+	}
+}

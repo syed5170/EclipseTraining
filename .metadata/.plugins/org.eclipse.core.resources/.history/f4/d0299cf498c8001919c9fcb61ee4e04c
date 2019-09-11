@@ -1,0 +1,5 @@
+package Externalizable;
+
+public class Book {
+
+}

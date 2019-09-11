@@ -1,0 +1,14 @@
+package abc;
+
+public class FileReaderClass {
+
+	public static void main(String[] args) {
+		try {
+			FileReader f
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

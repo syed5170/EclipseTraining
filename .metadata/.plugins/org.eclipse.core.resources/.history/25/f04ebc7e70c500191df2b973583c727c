@@ -1,0 +1,25 @@
+package abc;
+
+import java.io.FileReader;
+
+public class FileReaderClass {
+
+	public static void main(String[] args) {
+		try {
+			FileReader reader = new FileReader("put.txt"); 
+			int i;
+			try {
+				while(i=reader.read()!=-1)
+				{
+					System.out.println((char)(i));
+				}
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

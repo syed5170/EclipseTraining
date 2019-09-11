@@ -1,0 +1,16 @@
+package abc;
+
+import java.io.FileReader;
+
+public class FileReaderClass {
+
+	public static void main(String[] args) {
+		try {
+			FileReader reader = new FileReader("puts.txt"); 
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
